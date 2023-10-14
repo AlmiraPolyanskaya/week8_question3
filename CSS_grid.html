@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 300px 250px;
+            grid-template-rows: 40px 150px 80px 80px;
+            grid-gap: 7px;
+        }
+
+        .cell {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #4976BF;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .cell-1 {
+            grid-column: 1/2;
+            grid-row: 1/3;
+        }
+
+        .cell-4 {
+            grid-column: 1/3;
+            grid-row: 3/4;
+        }
+
+        .cell-5 {
+            grid-column: 1/3;
+            grid-row: 4/5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="container">
+            <div class="cell cell-1">
+                <p>Gallery</p>
+            </div>
+            <div class="cell cell-2">
+                <p>Title</p>
+            </div>
+            <div class="cell cell-3">
+                <p>Buy box</p>
+            </div>
+            <div class="cell cell-4">
+                <p>Description</p>
+            </div>
+            <div class="cell cell-5">
+                <p>Related</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
